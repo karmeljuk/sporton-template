@@ -12,7 +12,8 @@
 		<meta name="keywords" content="" />
 		<link href="http://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic" rel="stylesheet" type="text/css" />
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<script src="js/jquery.min.js"></script>
+
+		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/init.js"></script>
 		<noscript>
@@ -23,6 +24,25 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
 	</head>
+
+    <script>
+    $(function () {
+
+      $('[data-tab]').on('click', function (e) {
+        $(this)
+          .addClass('active')
+          .siblings('[data-tab]')
+          .removeClass('active')
+          .siblings('[data-content=' + $(this).data('tab') + ']')
+          .addClass('active')
+          .siblings('[data-content]')
+          .removeClass('active');
+        e.preventDefault();
+      });
+
+    });
+    </script>
+
 	<body>
 
 		<!-- Header -->
@@ -45,12 +65,12 @@
             </div>
             <nav>
               <ul>
-                <li><a href="#header">О нас</a></li>
-                <li><a href="#arofit">Польза для детей</a></li>
-                <li><a href="#why-we">Почему мы</a></li>
-                <li><a href="#playground">Виды площадок</a></li>
-                <li><a href="#order">Как сделать заказ</a></li>
-                <li class="last-item"><a href="#service">Услуги</a></li>
+                <li><a class="scrolly" href="#header">О нас</a></li>
+                <li><a class="scrolly" href="#profit">Польза для детей</a></li>
+                <li><a class="scrolly" href="#why-we">Почему мы</a></li>
+                <li><a class="scrolly" href="#playground">Виды площадок</a></li>
+                <li><a class="scrolly" href="#order">Как сделать заказ</a></li>
+                <li class="last-item"><a class="scrolly" href="#service">Услуги</a></li>
               </ul>
             </nav>
           </div>
@@ -68,23 +88,19 @@
               <div class="container">
                 <div class="row">
                   <div class="8u slider-box">
-                    <section>
-                      <div class="tabs">
+                    <section class="tabs">
                         <a href="#" data-tab="1" class="tab active">Tab 1</a>
                         <a href="#" data-tab="2" class="tab">Tab 2</a>
                         <a href="#" data-tab="3" class="tab">Tab 3</a>
-                      </div>
-                      <div class="slides">
-                        <div data-content="1" class="tab-content active">
+                        <div data-content="1" class="content active">
                           <img src="images/slide-1.jpg" alt="">
                         </div>
-                        <div data-content="2" class="tab-content">
+                        <div data-content="2" class="content">
                           <img src="images/slide-2.jpg" alt="">
                         </div>
-                        <div data-content="3" class="tab-content">
+                        <div data-content="3" class="content">
                           <img src="images/slide-3.jpg" alt="">
                         </div>
-                      </div>
                       <footer>
                         Инвестируй в здоровье и жизнерадостность  своего ребенка!
                       </footer>

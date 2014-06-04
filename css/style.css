@@ -716,14 +716,14 @@
         font-size: 37px;
       }
 
-      .tab-content
+      .tabs .content
       {
         display:none;
         clear:both;
         background:#FFF;
         padding:20px;
       }
-      .tab-content.active
+      .tabs .content.active
       {
         display:block;
       }
