@@ -716,6 +716,18 @@
         font-size: 37px;
       }
 
+      .tab-content
+      {
+        display:none;
+        clear:both;
+        background:#FFF;
+        padding:20px;
+      }
+      .tab-content.active
+      {
+        display:block;
+      }
+
 /*********************************************************************************/
 /* Main Sections                                                                 */
 /*********************************************************************************/
