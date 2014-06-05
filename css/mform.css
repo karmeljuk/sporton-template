@@ -1,0 +1,274 @@
+.edit_f_te{color: rgb(0, 0, 0);}
+.edit_f_error{background: #E01B1E !important;}
+.label_sndok{
+	text-align:center;
+}
+*{outline:none;}
+
+.form{
+    margin-top:60px;
+    float: right;
+    text-align: center;
+    background: url(../images/bg-form.png) top center no-repeat;
+    width:360px;
+    height:442px;
+	color:#fff;
+}
+.form p{
+    padding-top:3px;
+    text-align: right;
+    margin:15px 0 0 65px;
+    width:240px;
+    background:url(../images/key-form.png) 0 0 no-repeat;
+    display: block;
+    color:#9ea6b7;
+    font-size:12px;
+    font-family:sans-serif;
+}
+
+
+.inputs{
+    overflow: hidden;
+    margin:0 auto;
+}
+.form h3{
+    text-align: left;
+    line-height: 0.7;
+    margin:40px 0 40px 44px;
+    margin-left:44px;
+    text-transform: uppercase;
+    font-family: 'myriadproboldcondensed';
+    font-weight:normal;
+    font-size:34px;
+}
+.form h3 span{
+    font-size:20px;
+}
+.form form input{
+    font-family: 'myriadpro-cond';
+    border-radius: 3px;
+    margin-bottom:15px;
+    font-size:24px;
+    padding-left: 10px;
+    width:270px;
+    height:48px;
+    color:#a5adbe;
+    background:url(../images/input.png) center no-repeat;
+}
+
+.form form .button-form  input{
+    margin:28px auto 5px auto;
+    overflow: hidden;
+	cursor:pointer;
+	border:none;
+	width:280px;
+	height:48px;
+	background:url(../images/button-form.png) top center no-repeat;
+}
+.form form{
+    margin-top:20px;
+}
+.text-form{
+    width:100%;
+    padding:10px 0;
+    background: #d77509;
+}
+.text-form p{
+    font-family: 'pf_dindisplay_proregular';
+    font-size:15px;
+}
+.text-form p span{
+    text-transform: uppercase;
+    font-family: 'pf_dindisplay_probold';
+    font-size:20px;
+}
+/*Next form*/
+.form1{
+    overflow: hidden;
+    margin:100px auto 30px auto;
+    text-align: center;
+    background: url(../images/bg-form.png) top center no-repeat;
+    width:360px;
+    height:442px;
+	color:#fff;
+}
+.form1 p{
+    padding-top:3px;
+    text-align: right;
+    margin:15px 0 0 65px;
+    width:240px;
+    background:url(../images/key-form.png) 0 0 no-repeat;
+    display: block;
+    color:#9ea6b7;
+    font-size:12px;
+    font-family:sans-serif;
+}
+
+
+.inputs{
+    overflow: hidden;
+    margin:0 auto;
+}
+.form1 h3{
+    text-align: left;
+    line-height: 0.7;
+    margin:40px 0 40px 44px;
+    margin-left:44px;
+    text-transform: uppercase;
+    font-family: 'myriadproboldcondensed';
+    font-weight:normal;
+    font-size:34px;
+}
+.form1 h3 span{
+    font-size:20px;
+}
+.form1 form input{
+    font-family: 'myriadpro-cond';
+    border-radius: 3px;
+    margin-bottom:15px;
+    font-size:24px;
+    padding-left: 10px;
+    width:270px;
+    height:48px;
+    color:#a5adbe;
+    background:url(../images/input.png) center no-repeat;
+}
+
+.form1 form .button-form  input{
+    margin:28px auto 5px auto;
+    overflow: hidden;
+	cursor:pointer;
+	border:none;
+	width:280px;
+	height:48px;
+	background:url(../images/button-form.png) top center no-repeat;
+}
+.form1 form{
+    margin-top:20px;
+}
+.text-form{
+    width:100%;
+    padding:10px 0;
+    background: #d77509;
+}
+.text-form p{
+    font-family: 'pf_dindisplay_proregular';
+    font-size:15px;
+}
+.text-form p span{
+    text-transform: uppercase;
+    font-family: 'pf_dindisplay_probold';
+    font-size:20px;
+}
+
+
+
+/*Block*/
+
+.form2{
+    position: relative;
+    margin:0 auto;
+    overflow: hidden;
+    background: url(../images/bg-form2.jpg) top center no-repeat;
+    width:900px;
+    height:728px;
+	color:#fff;
+}
+.form2 form{margin-top: 25px;}
+
+.form2 form input{
+    font-family: 'myriadpro-cond';
+    border-radius: 3px;
+    margin-bottom:15px;
+    font-size:24px;
+    padding-left: 10px;
+    width:270px;
+    height:48px;
+    color:#a5adbe;
+    background:url(../images/input.png) center no-repeat;
+}
+
+.form2 form .button-form  input{
+    margin:20px auto 5px auto;
+    overflow: hidden;
+	cursor:pointer;
+	border:none;
+	width:150px;
+	height:39px;
+	background:url(../images/button-buy.png) top center no-repeat;
+}
+
+
+.left-form{
+    margin:30px 20px;
+    float:left;
+    height:100%;
+}
+.line-big-form{
+    margin-bottom:15px;
+    overflow: hidden;
+    width:432px;
+    height:6px;
+    background:url(../images/line-big-form.png) center no-repeat;
+}
+.line-mini-form{
+    overflow: hidden;
+    width:135px;
+    height:6px;
+    background:url(../images/line-mini-form.png) center no-repeat;
+}
+.img1-form, .img2-form, .img3-form{
+    width:135px;
+    overflow: hidden;
+    float:left;
+}
+.img1-form, .img2-form{
+    margin-right:13.5px;
+}
+.right-form{
+    position: relative;
+    margin-top:30px;
+    text-align: left;
+}
+.right-form h1{
+    margin-bottom:10px;
+    line-height:1;
+    font-size:24px;
+    font-family: 'myriadpro-cond';
+}
+.right-form p{
+    color:#d7dbe6;
+    font-family: 'myriadpro-cond';
+    font-size:20px;
+}
+.right-form p span{
+    font-size:30px;
+}
+.social-form{
+    top:34px;
+    right:58px;
+    position: absolute;
+}
+.social-form img{
+    margin-right:5px;
+}
+.margin-form{
+    overflow: hidden;
+    display: block;
+    margin-bottom:15px;
+}
+.right-form h5{
+    margin-top:10px;
+    color:#9ea6b7;
+    font-size:13px;
+    font-family:sans-serif;
+}
+#close{
+    width:10px;
+    height:10px;
+    cursor: pointer;
+    background:url(../images/close-form2.png) 0 0 no-repeat;
+    position: absolute;
+    top:10px;
+    right:10px;
+}
