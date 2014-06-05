@@ -496,6 +496,23 @@
 			form ::-moz-placeholder { color: #555 !important; }
 			form :-ms-input-placeholder { color: #555 !important; }
 
+      .label_to
+      {
+        display: none;
+      }
+
+      .label_sndok
+      {
+        display: none;
+        text-align: center;
+      }
+
+      .progressimg
+      {
+        display: none;
+        text-align: center;
+      }
+
 
 /*********************************************************************************/
 /* Header                                                                        */
