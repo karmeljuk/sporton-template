@@ -5,12 +5,12 @@
 /*********************************************************************************/
 
   @font-face {
-      font-family: 'NeoSansCyrRegular';
-      src: url('font/neosanscyr-regular.eot');
-      src: url('font/neosanscyr-regular.eot') format('embedded-opentype'),
-           url('font/neosanscyr-regular.woff') format('woff'),
-           url('font/neosanscyr-regular.ttf') format('truetype'),
-           url('font/neosanscyr-regular.svg#NeoSansCyrRegular') format('svg');
+    font-family: 'NeoSansCyrRegular';
+    src: url('font/neosanscyr-regular.eot');
+    src: url('font/neosanscyr-regular.eot') format('embedded-opentype'),
+         url('font/neosanscyr-regular.woff') format('woff'),
+         url('font/neosanscyr-regular.ttf') format('truetype'),
+         url('font/neosanscyr-regular.svg#NeoSansCyrRegular') format('svg');
   }
 
   @font-face {
@@ -495,10 +495,6 @@
 			form :-moz-placeholder { color: #555 !important; }
 			form ::-moz-placeholder { color: #555 !important; }
 			form :-ms-input-placeholder { color: #555 !important; }
-
-
-
-
 
 
 /*********************************************************************************/
@@ -1255,10 +1251,6 @@
               margin-left: 70px;
             }
 
-
-
-
-
 /*********************************************************************************/
 /* Service                                                                        */
 /*********************************************************************************/
@@ -1271,14 +1263,19 @@
 
   .service .container .wave
     {
-      margin: 40px 0 20px 0;
+      margin: 20px 0 20px 0;
       background: transparent url('../images/wave-2.png') 0 0 no-repeat;
+    }
+
+    .service .container .container
+    {
+      width: 950px;
     }
 
       .service header h2
       {
         color: #FFF;
-        margin-top: 50px;
+        padding-top: 25px;
         font-weight: 900;
       }
 
@@ -1286,6 +1283,13 @@
       {
         font-size: 25px;
         color: #FFE276;
+        text-align: center;
+        letter-spacing: -0.5px;
+      }
+
+      .service .row .second-item h3, .service .row .third-item h3
+      {
+        margin-bottom: 37px;
       }
 
       .service p
@@ -1293,11 +1297,31 @@
         color: #FFF;
         font-size: 16px;
         font-family: 'PFDinTextCondPro';
+        line-height: 1.3em;
+        margin-bottom: 20px;
       }
 
-      .service .row > div 
+      .service .row .first-item
       {
-        w305
+        width: 294px;
+        margin-left: 0;
+        padding-left: 40px;
+      }
+
+      .service .row > div
+      {
+        margin-left: 25px;
+        padding-left: 25px;
+      }
+
+      .service .row .second-item
+      {
+        width: 367px;
+      }
+
+      .service .row .third-item
+      {
+        width: 279px;
       }
 
 
