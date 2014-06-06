@@ -7,9 +7,10 @@
 		<meta name="keywords" content="" />
 		<link href="http://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic" rel="stylesheet" type="text/css" />
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="/css/mform.css" />
-    <script type="text/javascript" src="js/mform.js"></script>
+    <!-- <link rel="stylesheet" href="css/mform.css" /> -->
+
 		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/mform.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/init.js"></script>
 		<noscript>
@@ -98,7 +99,7 @@
                       </div>
                       <div data-content="3" class="content">
                         <img src="images/slide-3.jpg" alt="">
-                        <div class="slide-desc">Детские игровые площадки способствуют </br> активному и всестороннему</div>
+                        <div class="slide-desc">Детские игровые площадки способствуют </br> активному и всестороннему развитию детей.</div>
                       </div>
                     </section>
                     <div class="arrows">
@@ -113,27 +114,21 @@
                             <h2>ОСТАВЬТЕ ЗАЯВКУ</h2>
                             <p>И мы подготовим для  Вас предложение</p>
                             <hr>
-                              <label class="label_to">Текст сообщения который приходит на почту</label>
-                              <div class="label_sndok">Cообщение успешно отправлено!<br />Спасибо за внимание.
-                              </div>
-                              <div class="progressimg"><img src="ap_s/img/loader.gif"border="0"></div>
                           </div>
                           <div class="form-data">
-                            <div class=""><input  defval="Имя:" type="text" class="text user edit_f" value="Ваше Имя"
-                            onfocus="(this.value == 'Ваше Имя') && (this.value = '')"
-                            onblur="(this.value == '') && (this.value = 'Ваше Имя')" /></div>
+                            <label class="label_to">Текст сообщения который приходит на почту</label>
+                            <div class="label_sndok">Cообщение успешно отправлено!<br />Спасибо за внимание.
+                            </div>
+                            <div class="progressimg"><img src="ap_s/img/loader.gif"border="0"></div>
 
-                            <div class=""><input sname="Телефон:" defval="Телефон" require="true" vphone="true" title="Это поле обязательное для заполнения" type="text" class="text phone edit_f" value="Ваш телефон"
-                            onfocus="(this.value == 'Ваш телефон') && (this.value = '')"
-                            onblur="(this.value == '') && (this.value = 'Ваш телефон')"/></div>
+                            <input value="Имя:" defval="Имя:" class="text user edit_f" type="text" >
+                            <input value="Телефон:" sname="Телефон:" defval="Телефон:" require="true" vphone="true" title="Это поле обязательное для заполнения" type="text" class="text phone edit_f"/>
+                            <input value="Email:" defval="Email:" vemail="true" sname="Почта;" require="true" class="text email edit_f" type="text">
 
-                            <div class=""><input defval="Email:" vemail="true" sname="Почта;" require="true" type="text" class="text email edit_f" value="Ваш e-mail"
-                            onfocus="(this.value == 'Ваш e-mail') && (this.value = '')"
-                            onblur="(this.value == '') && (this.value = 'Ваш e-mail')" /></div>
-                          </div>
+                            </div>
                           <div class="bottom">
                             <p class="button-submit">
-                              <input type="submit" onclick="pushmsg(this);" class="button" value="Оставить заявку" />
+                              <input type="button" value="Отправить заявку"onclick="pushmsg(this);" class="button" />
                             </p>
                             <p class="notice">Ваши данные не будут переданы  третьим лицам</p>
                           </div>
