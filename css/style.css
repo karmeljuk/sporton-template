@@ -770,7 +770,7 @@
       width: 312px;
     }
 
-    .header .form form
+    .form form
     {
 
       height: 378px;
@@ -790,38 +790,38 @@
 
     }
 
-    .header .form .top *
+    .form form .top *
     {
       color: #fff;
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
       text-align: center;
     }
 
-    .header .form .top h2
+    .form form .top h2
     {
       margin: 0;
       font-size: 26px;
       line-height: 22px;
     }
 
-    .header .form .top p
+    .form form .top p
     {
       font-size: 20px;
       line-height: 28px;
       margin-bottom: 3px;
     }
 
-    .header .form hr
+    .form form hr
     {
       color: #9CC87A;
     }
 
-    .header .form .form-data
+    .form form .form-data
     {
       margin-top: 12px;
     }
 
-    .header .form input.text
+    .form form input.text
     {
       text-indent: 41px;
       margin-bottom: 7px;
@@ -829,32 +829,33 @@
       padding: 6px 5px 7px 5px;
     }
 
-    .header .form input.user
+    .form form input.user
     {
       background: #fff url('../images/user.png') 11px 6px no-repeat;
     }
 
-    .header .form input.phone
+    .form form input.phone
     {
       background: #fff url('../images/phone.png') 11px 6px no-repeat;
     }
 
-    .header .form input.email
+    .form form input.email
     {
       background: #fff url('../images/email.png') 11px 6px no-repeat;
     }
 
-    .header .form .bottom
+    .form form .bottom
     {
       margin-top: 14px;
     }
 
-    .header .form .notice
+    .form form .notice
     {
       font-size: 13px;
       text-align: center;
       line-height: 16px;
       margin-top: 20px;
+      color: #fff
     }
 
 
@@ -1517,5 +1518,98 @@
           -moz-box-shadow:    0px 3px 1px rgba(41, 97, 4, 1);
           box-shadow:         0px 3px 1px rgba(41, 97, 4, 1);
         }
+
+/*********************************************************************************/
+/* Modal                                                                         */
+/*********************************************************************************/
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    bottom: 0;
+    cursor: default;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+    z-index: 1;
+
+    -webkit-transition: opacity .8s;
+    -moz-transition: opacity .8s;
+    -ms-transition: opacity .8s;
+    -o-transition: opacity .8s;
+    transition: opacity .8s;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+.popup {
+    width: 276px;
+    display: inline-block;
+    left: 50%;
+    opacity: 0;
+    position: fixed;
+    text-align: justify;
+    top: 40%;
+    visibility: hidden;
+    z-index: 10;
+
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+
+    -webkit-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+    -moz-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+    -ms-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+    -o-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+    box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+
+    -webkit-transition: opacity .8s, top .8s;
+    -moz-transition: opacity .8s, top .8s;
+    -ms-transition: opacity .8s, top .8s;
+    -o-transition: opacity .8s, top .8s;
+    transition: opacity .8s, top .8s;
+}
+.overlay:target+.popup {
+    top: 50%;
+    opacity: 1;
+    visibility: visible;
+}
+.close {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-decoration: none;
+    top: -15px;
+    width: 30px;
+
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+}
+.close:before {
+    color: rgba(255, 255, 255, 0.9);
+    content: "X";
+    font-size: 24px;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+}
+.close:hover {
+    background-color: rgba(64, 128, 128, 0.8);
+}
 
 
