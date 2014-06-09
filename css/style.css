@@ -504,7 +504,7 @@
 			form ::-moz-placeholder { color: #555 !important; }
 			form :-ms-input-placeholder { color: #555 !important; }
 
-      .label_to
+      /*.label_to
       {
         display: none;
       }
@@ -519,7 +519,7 @@
       {
         display: none;
         text-align: center;
-      }
+      }*/
 
 
 /*********************************************************************************/
