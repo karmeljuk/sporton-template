@@ -688,24 +688,25 @@
           margin-left: 9px;
         }
 
-      .slider .tabs a
+      .slider .nivo-controlNav a
       {
         width: 20px;
         height: 20px;
         display: inline-block;
         margin-right: 11px;
+        text-indent:-9999px;
         background: #9A9A9A;
         -moz-border-radius: 10px;
         -webkit-border-radius: 10px;
         border-radius: 10px;
       }
 
-      .slider .tabs a:first-child
+      .slider .nivo-controlNav a:first-child
       {
         margin-left: 49px;
       }
 
-      .slider .tabs a.active
+      .slider .nivo-controlNav a.active
       {
         background: #fff;
         border: 3px solid #58A21D;
