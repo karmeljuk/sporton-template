@@ -665,7 +665,7 @@
 
     .slider .slider-box
     {
-      width: 714px;
+      width: 704px;
     }
 
       .slider section > header
@@ -693,12 +693,19 @@
         width: 20px;
         height: 20px;
         display: inline-block;
+        cursor: pointer;
         margin-right: 11px;
         text-indent:-9999px;
         background: #9A9A9A;
         -moz-border-radius: 10px;
         -webkit-border-radius: 10px;
         border-radius: 10px;
+        padding: 10px;
+      }
+
+      .slider .nivo-controlNav
+      {
+        height: 46px;
       }
 
       .slider .nivo-controlNav a:first-child
@@ -710,36 +717,34 @@
       {
         background: #fff;
         border: 3px solid #58A21D;
-        padding: 10px;
         -moz-border-radius: 14px;
         -webkit-border-radius: 14px;
         border-radius: 14px;
-        margin-bottom: -3px;
       }
 
-      .slider .tabs .content
+      .slider .nivoSlider
       {
+        position:relative;
+      }
+
+      .slider .nivoSlider img
+      {
+        position:absolute;
+        top:0px;
+        left:0px;
         display:none;
-        clear:both;
-        text-align: left;
-        height: 379px;
-        margin-top: 4px;
+        width: 100%;
       }
 
-        .slider .tabs .content.active
+        .slider img.nivo-main-image, .slider .nivo-slice img
         {
-          display:block;
+          border: 5px solid #339900;
+          height: 369px !important;
+          width: 663px !important;
         }
 
-        .slider .tabs .content img
-        {
-          background: #339900;
-          padding: 5px;
-        }
-
-      .slider .slide-desc
+      .slider .nivo-caption
       {
-        margin-top: 35px;
         background: rgba(67, 148, 12, 0.89);
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
         height: 126px;
@@ -747,22 +752,35 @@
         font-size: 30px;
         padding: 23px 0px;
         text-align: center;
-      }
-
-      .slider-box .arrows
-      {
+        overflow: visible;
+        top: 419px;
         position: absolute;
-        top: 222px;
+        width: 100%;
       }
 
-        .slider-box .arrows .arrow-left
+        .slider .nivo-directionNav a
         {
-          margin-left: -17px;
+          height: 72px;
+          width: 62px;
+          display: inline-block;
+          border: 0;
+          cursor: pointer;
+          position: absolute;
+          top: 168px;
+          z-index: 999;
         }
 
-        .slider-box .arrows .arrow-right
+        .slider .nivo-directionNav .nivo-prevNav
         {
-          margin-left: 578px;
+          left: 0;
+          margin-left: -17px;
+          background: url('../images/arrow-left.png') 0 0 no-repeat;
+        }
+
+        .slider .nivo-directionNav .nivo-nextNav
+        {
+          left: 618px;
+          background: url('../images/arrow-right.png') 0 0 no-repeat;
         }
 
     .header .form
@@ -774,7 +792,7 @@
     .form form
     {
 
-      height: 378px;
+      height: 374px;
       padding: 27px 18px 12px;
       border: 3px solid #2C7101;
       -webkit-border-radius: 7px;

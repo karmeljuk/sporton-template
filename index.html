@@ -14,7 +14,6 @@
     <script type="text/javascript" src="js/mform.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/init.js"></script>
-    <link rel="stylesheet" href="css/default.css" type="text/css" media="screen" />
 		<noscript>
 			<link rel="stylesheet" href="css/skel-noscript.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -27,8 +26,11 @@
       $(window).load(function() {
         $('#slider').nivoSlider({
           effect: 'fade',
-          animSpeed: 500,
-          pauseTime: 300000,
+          animSpeed: 300,
+          pauseTime: 20000,
+          prevText: '',
+          nextText: '',
+          afterChange: function(){},
         });
       });
     </script>
@@ -81,16 +83,13 @@
                   <div class="9u slider-box slider-wrapper">
                     <section id="slider"  class="tabs">
                       <div class="content">
-                        <img src="images/slide-1.jpg" alt="" title="#slide-desc-1">
-                        <div id="slide-desc-1" class="slide-desc">Инвестируй в здоровье и </br> жизнерадостность своего ребенка!</div>
+                        <img src="images/slide-1.jpg" alt="" title="Инвестируй в здоровье и </br> жизнерадостность своего ребенка!">
                       </div>
                       <div class="content">
-                        <img src="images/slide-2.jpg" alt="">
-                        <div id="slide-desc-2" class="slide-desc">Стань фанатом здоровой жизни </br> УЖЕ СЕЙЧАС!</div>
+                        <img src="images/slide-2.jpg" alt="" title="Стань фанатом здоровой жизни </br> УЖЕ СЕЙЧАС!">
                       </div>
                       <div class="content">
-                        <img src="images/slide-3.jpg" alt="">
-                        <div id="slide-desc-3" class="slide-desc">Детские игровые площадки способствуют </br> активному и всестороннему развитию детей.</div>
+                        <img src="images/slide-3.jpg" alt="" title="Детские игровые площадки способствуют </br> активному и всестороннему развитию детей.">
                       </div>
                     </section>
                   </div>
