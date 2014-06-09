@@ -9,7 +9,7 @@
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
     <!-- <link rel="stylesheet" href="css/mform.css" /> -->
 
-		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript" src="js/mform.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/init.js"></script>
@@ -22,21 +22,12 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
 
     <script>
-      $(function () {
-
-        $('[data-tab]').on('click', function (e) {
-          $(this)
-            .addClass('active')
-            .siblings('[data-tab]')
-            .removeClass('active')
-            .siblings('[data-content=' + $(this).data('tab') + ']')
-            .addClass('active')
-            .siblings('[data-content]')
-            .removeClass('active');
-          e.preventDefault();
+      $(window).load(function() {
+        $('#slider').nivoSlider({
+          effect: 'fade',
+          animSpeed: 500,
         });
-
-      });
+    });
     </script>
 	</head>
 
@@ -91,15 +82,15 @@
                       <a href="#" data-tab="3" class="tab"></a>
                       <div data-content="1" class="content active">
                         <img src="images/slide-1.jpg" alt="">
-                        <div class="slide-desc">Инвестируй в здоровье и </br> жизнерадостность своего ребенка!</div>
+                        <div id="slide-desc-1" class="slide-desc">Инвестируй в здоровье и </br> жизнерадостность своего ребенка!</div>
                       </div>
                       <div data-content="2" class="content">
                         <img src="images/slide-2.jpg" alt="">
-                        <div class="slide-desc">Стань фанатом здоровой жизни </br> УЖЕ СЕЙЧАС!</div>
+                        <div id="slide-desc-2" class="slide-desc">Стань фанатом здоровой жизни </br> УЖЕ СЕЙЧАС!</div>
                       </div>
                       <div data-content="3" class="content">
                         <img src="images/slide-3.jpg" alt="">
-                        <div class="slide-desc">Детские игровые площадки способствуют </br> активному и всестороннему развитию детей.</div>
+                        <div id="slide-desc-3" class="slide-desc">Детские игровые площадки способствуют </br> активному и всестороннему развитию детей.</div>
                       </div>
                     </section>
                     <div class="arrows">
